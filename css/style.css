@@ -1,0 +1,251 @@
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	color: white;
+	font-family: 'Grenze Gotisch', cursive;
+}
+
+header{
+	 background-image: url('../images/image1.jpg');
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 height: 100vh;
+}
+
+.clearfix page-break-after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+.row{
+	max-width: 1180px;
+	margin:0 auto;
+}
+.logo{
+	height: 120px;
+	width: 150px;
+	float: left;
+	margin-top: 3%;
+	margin-left: 3%;
+}
+.main-nav{
+	
+	width:1180px;
+	position: absolute;
+	top: 25%;
+	margin-left:10%;
+	transform: translate(-70%, -20%);
+}
+
+.main-nav li{
+	display: inline-block;
+	list-style:none;
+	margin-left: 0px;
+	margin-top: 220px;
+	margin-right: 40px;
+
+}
+
+.main-nav li a{
+	padding: 5px;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+	overflow-y: hidden;
+}
+.main-nav li a:hover{
+	border-bottom: 2px solid #bf55ec;
+
+}
+
+.main-content{
+	width:1180px;
+	position: absolute;
+	top: 45%;
+	margin-left:28%;
+	transform: translate(-20%, -80%);
+}
+
+h1{
+	color: grey;
+	font-size: 240%;
+	word-spacing: 5px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color .02s, border 0.2s, color 0.2s;
+}
+.btn-full{
+	background-color: transparent;
+	color: #bf55ec;
+	margin-right: 15px;
+	border:1px solid #bf55ec;
+}
+.btn-full:hover{
+	background-color: #fff;
+
+}
+.btn-nav{
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid white;
+}
+.btn-nav:hover{
+	background-color: #bf55ec;
+}
+
+.colorchange{
+	animation: colorchangeabhishek 1.5s infinite;
+}
+@keyframes colorchangeabhishek{
+	0%{color:red;}
+	25%{color:white;}
+	50%{color: purple;}
+	75%{color: black}
+    100%{color:#bf55ec;}
+}
+
+.mobile-icon{
+	display: none;}
+	.dropbtn{display: none;}
+	.dropdown-content{display: none;}
+
+
+/*////Responsive queries//////*/
+
+@media only screen and (max-width:1180px){
+	.main-content{
+		width:100%;}
+
+}
+@media only screen and (max-width:1035px){
+      h1{font-size: 180%;
+      	padding-top: 2%} 
+     .logo{
+     height: 100px;
+	width: 125px;
+	float: left;
+	margin-left: 3%;
+	margin-top: 6%;}
+    .btn-full{font-size: 80%;}
+    .btn-nav{font-size: 80%;}
+    }
+@media only screen and (max-width: 760px){
+
+   h1{font-size: 150%;}
+   .main-nav { display: none; }
+.btn{
+	border-radius: 180px;
+	padding: 7px 20px;
+	display:inline-block;
+
+}
+.btn-nav{
+	float: bottom;
+}
+   .mobile-icon{
+   	display: none;
+   	 color: #bf55ec;
+   	 margin-top: 4px;
+   	 margin-right: 4px;
+   	 float:right;
+   	 }
+
+
+  .dropbtn {
+   	display: inline-block;
+   	 margin-top: 370px;
+   	 font-family: 'Grenze Gotisch', cursive;
+    padding: 4px 8px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 130px;
+	transition: background-color .02s, border 0.2s, color 0.2s;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color:#bf55ec;
+}
+
+.dropdown {
+  position: absolute;
+
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 90px;
+  overflow: auto;
+  margin-left: 5px;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  
+  border-bottom: 1px dotted #bf55ec;
+	background: transparent;
+	font-size: 70%;
+	text-align: left;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 40px;
+	transition: background-color .02s, border 0.2s, color 0.2s;
+}
+.dropdown-content a:last-child {
+	border-bottom:none;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+
+     .main-nav{float:left;}
+
+   	 .main-nav li{
+   	 	display: block;
+   	 	color: #bf55ec;
+   	 }
+}
+@media only screen and (max-width: 480px){
+h1{font-size: 120%;}
+.logo{
+     height: 90px;
+	width: 100px;
+    margin-top: 20%;}
+	.btn{
+	 border-radius: 130px;
+     padding: 5px 10px;}
+     .dropbtn {border-radius: 100px;}
+
+	.btn-full{font-size: 60%;}
+    .btn-nav{font-size: 60%;}
+}
